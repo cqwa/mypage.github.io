@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>cqwa</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <style>
+    body {
+    margin: 0;
+    font-family: '微軟正黑體', sans-serif;
+   }
+    .fixed {
+      width: 30px;
+      height: 100px;
+      background-color: rgb(88, 109, 90);
+      color: #ffffff;
+      text-align: center;
+      line-height: 25px;
+      position: fixed;
+      right: 0;
+      top: 100px;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      position: relative;
+      height: auto;
+    }
+
+    /* 選單 */
+
+    section {
+      position: relative;
+    }
+
+    .banner {
+      position: relative;
+      top: 104px;
+          }
+
+    .banner img {
+      width: 100%;
+    }
+/* ------ 影片 ------ */
+
+.video-area {
+  padding: 5% 20%;
+  background-color: #ffffff;
+}
+    .video-container {
+  position: relative;
+  padding: 30%;
+  overflow: hidden;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+
+    .content {
+      padding: 150px 200px;
+    }
+
+    /* 頁腳 */
+
+.footer {
+    background-color: #dfd9d5;
+    padding: 15px 0;
+}
+
+.footer_logo img {
+    max-width: 100px;
+}
+
+.footer_address ul {
+    list-style-type: none;
+    font-size: 14px;
+    line-height: 1.2rem;
+    color: #5e5e5e;
+}
+
+.footer_copyright {
+    font-size: 10px;
+}
+  </style>
+</head>
+
+<body>
+
+ <header>
+    <nav class="navbar navbar-light bg-light navbar-expand-md">
+     <div class="container">
+      <!-- LOGO -->
+      <a href="#" class="navbar-brand">
+        <img src="images/banner2.png" alt="logo" />
+      </a>
+      <!--手機按鈕-->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-toggle="#navbar-collapse">
+      <!--icon-->
+        <span class="navbar-toggler-icon"></span>
+  </button>
+
+      <!--內容-->
+      <div id="navbar-collapse" class="collapse navbar-collapse">
+      <div> <ul class="navbar-nav">
+          <li><a href="#product" class="nav-link">ホーム</a></li>
+          <li><a href="https://www.youtube.com/channel/UCv5bgMW1p7qM-LHytKXEXig?view_as=subscriber" class="nav-link">youtube</a></li>
+          <li><a href="https://www.instagram.com/cqwa___/" class="nav-link">instagram</a></li>
+          <li><a href="https://www.facebook.com/" class="nav-link">facebook</a></li>
+          <li><a href="https://www.google.com.hk/?gws_rd=ssl" class="nav-link">google</a></li>
+        </ul>
+      </div>
+      </div>
+    </nav>
+  </header> 
+
+
+     <!-- 可以輪播的Banner圖片 -->
+  <section>
+    <div id="carousel-controller" class="carousel slide" data-ride="carousel">
+      <!-- 輪播圖片 -->
+      <div class="carousel-inner">
+        <!-- 圖片1 -->
+        <div class="carousel-item active">
+          <img class="w-100" src="images/07.jpg" alt="">
+          <div class="carousel-caption">
+          </div>
+        </div>
+        <!-- 圖片2 -->
+        <div class="carousel-item">
+          <img class="w-100" src="images/06.jpg" alt="">
+          <div class="carousel-caption">
+
+          </div>
+        </div>
+        <!-- 圖片3 -->
+        <div class="carousel-item">
+          <img class="w-100" src="images/08.jpg" alt="">
+          <div class="carousel-caption">
+          
+          </div>
+        </div>
+      </div>
+      <!-- 圖片上一頁按鈕 -->
+      <a href="#carousel-controller" data-slide="prev" class="carousel-control-prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      <!-- 圖片下一頁按鈕 -->
+      <a href="#carousel-controller" data-slide="next" class=" carousel-control-next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+
+      <!-- 下方點點 -->
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-controller" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-controller" data-slide-to="1"></li>
+        <li data-target="#carousel-controller" data-slide-to="2"></li>
+      </ol>
+    </div>
+  </section>
+
+  </div>
+
+<!--vedio-->
+<section class="container-fluid video-area">
+  <div class="video-container">
+    <iframe width="640" height="360" src="video/02.mp4" frameborder="0"
+    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+  
+</section>
+
+
+
+  
+
+ 
+<div class="fixed"">ようこそ</div>
+
+
+    <!-- 網頁其他內容 -->
+    <section class="content">
+      <h2>咖哩<sub>カレー</sub></h2>
+      <h6>敘述地球漸漸被人類破壞垃圾隨處可見，人類在未來可能會面臨淘汰抑或是選擇搬離地球，但當大家都選擇離開逃跑時，就唯獨愛這塊土地的老一輩們不願離開。
+        故事主軸是想藉由這故事去正視地球環境的問題，但在結尾也帶給大家溫馨圓滿的結局，代表只要有心去正視問題改變說不定地球也會變回最初的樣貌。
+      
+      </h6>
+      <p>    </p>     
+      <p>    </p>
+      <p>    </p>
+      <p>    </p>
+      <h6> <strong>ストーリーの内容</strong>  </h6>
+      <p><blockquote>一個被人類使用後殘破不堪空蕩蕩的星球上，住著兩個老爺爺奶奶，沒有小孩的兩人一直不願搬離星球，由於環境實在太髒亂導致大部分人類都搬離了這顆星球。</blockquote></p>
+      <p>爺爺苦惱很久，終於發明了一個能將垃圾變食物的機器，所以爺爺奶奶每天出門撿著垃圾帶回家。</p>
+      <p>在某天偶然發現有個紙箱立面有東西，在爺爺奶奶的照料下柴君恢復了健康又變肥滋滋。!</p>
+      <p>從此柴君就與爺爺奶奶生活並且製造出更多好吃的咖哩讓觀光星球的人越來越多，讓星球又恢復當時的繁榮。</p>
+    </section>
+
+    <!-- 網頁的頁腳 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-sm-12 footer_logo">
+                    <img src="images/banner2.png">
+                </div>
+                <div class="col-md-4 col-sm-12 footer_address">
+                    <ul>
+                        <li>服務時間：週一至週五 9:00 ~ 18:00</li>
+                        <li>服務信箱：boo89702@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row footer_copyright justify-content-center">
+                <p>cqwa © 2019 mypages .ALL RIGHTS RESERVED.</p>
+            </div>
+        </div>
+    </footer>
+  </div>
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+</body>
+
+</html>
