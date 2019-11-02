@@ -48,26 +48,26 @@
     .banner img {
       width: 100%;
     }
-/* ------ 影片 ------ */
+/* 商品文案 */
 
-.video-area {
-  padding: 5% 20%;
-  background-color: #ffffff;
-}
-    .video-container {
-  position: relative;
-  padding: 30%;
-  overflow: hidden;
+.article_text h1 {
+    color: #ffffff;
+    margin: 50px 0;
+    letter-spacing: .5rem;
 }
 
-.video-container iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
 
+/* ------ 背景影片 ------ */
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    opacity: .5;
+}
 
 
     .content {
@@ -174,13 +174,22 @@
 
   </div>
 
-<!--vedio-->
-<section class="container-fluid video-area">
-  <div class="video-container">
-    <iframe width="640" height="360" src="video/02.mp4" frameborder="0"
-    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  </div>
-  
+
+   <!-- 商品文案 -->
+   <section>
+    <div class="container">
+        <div class="row">
+            <div class="creative_text">
+                <h1>咖哩<sub>カレー</sub></h1>
+            </div>
+        </div>
+    </div>
+    <!-- 背景影片 -->
+    <div class="container">
+        <video autoplay muted loop id="myVideo">
+            <source src="video/01.mp4" type="video/mp4">
+        </video>
+    </div>
 </section>
 
 
@@ -193,7 +202,7 @@
 
     <!-- 網頁其他內容 -->
     <section class="content">
-      <h2>咖哩<sub>カレー</sub></h2>
+      
       <h6>敘述地球漸漸被人類破壞垃圾隨處可見，人類在未來可能會面臨淘汰抑或是選擇搬離地球，但當大家都選擇離開逃跑時，就唯獨愛這塊土地的老一輩們不願離開。
         故事主軸是想藉由這故事去正視地球環境的問題，但在結尾也帶給大家溫馨圓滿的結局，代表只要有心去正視問題改變說不定地球也會變回最初的樣貌。
       
